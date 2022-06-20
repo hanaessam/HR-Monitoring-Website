@@ -1,0 +1,45 @@
+body
+{
+background-image: url("unknown.png");
+background-position: center;
+background-size: cover;
+}
+
+.p6{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+.p{
+    color: rgb(109, 107, 107);
+    margin-top: 40%;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-left: 20%;
+}
+.parag{
+    color: rgb(109, 107, 107);
+    margin-top: 40%;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-left: 20%;
+}
+ a:hover{
+    opacity:0.5 ;
+}
+#p1{
+    background-color:  rgb(250, 252, 233);
+    position: relative;
+    height: 250px;
+    width:250px;
+    margin-right:20px ;
+    border-radius: 10px;
+    
+    
+}
+#p1:hover{
+    opacity:0.5;
+}

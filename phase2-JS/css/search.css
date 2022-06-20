@@ -1,0 +1,78 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    }
+  nav ul {
+    margin-left: 30%;
+  }
+  nav{
+    background-color: rgb(250, 252, 233);
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 10px;
+    margin-left: 5%;
+    font-size: large;
+    color: rgb(109, 107, 107);}
+  
+  body
+    {
+  background-image: url("unknown.png");
+  background-position: center;
+  background-size: cover;
+  font-family: sans-serif;
+    }
+button {
+    padding: 10px 0;
+    color: rgb(177, 177, 177);
+    outline: none;
+    background: transparent;
+    border: 2px solid rgb(102, 102, 102);
+    cursor: pointer;
+
+}
+.form
+{
+    text-align: center;
+    margin-top: 10%;
+}
+.searchbar
+{
+    width: 30%;
+    font-size: large;
+    border:transparent;
+    border-radius: 8px;
+
+}
+#submit_button{width: 5%;}
+
+table , th , td , tr  {
+    border: 1px solid ;
+    color: rgb(250, 252, 233);
+    border-color: rgb(100,100,100);
+    border-width: 1px;
+}
+.TABLE
+{
+    text-align: center;
+}
+
+.TABLE > table
+{
+    margin: 0% auto;
+    width: 70%;
+    font-size: large;
+}
+
+#Vacation_request
+{
+    margin-top: 4%;
+    margin-left: 40%;
+    border-width: 3px;
+    width: 150px;
+}
+#Vacation_request > a{color: rgb(250, 252, 233);}
+
+

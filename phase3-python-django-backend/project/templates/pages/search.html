@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{%static 'css/search.css'%}'>
+
+    <script src='{% static 'js/search.js' %}'> </script>
+
+    <title>Search</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li id="p1" onclick="toHome()">Home</li>
+            <li id="p2" onclick="toAdd()">Add</li>
+            <li id="p3" onclick="toUpdate()">Edit</li>
+            <li id="p4" onclick="toSearch()">Search</li>
+            <li id="p5" onclick="toReview()">Review</li>
+
+        </ul>
+    </nav>
+    <div class="form">
+        <form name="search form" onsubmit=" Check_Name()" >
+            <input type="search"  name="Employee" class ="searchbar" placeholder="   Enter the employee's name">
+            
+            <button type="submit" id="submit_button"><b>Search</b></button>
+        </form>
+    </div>
+
+
+    <br>
+
+        <div class="TABLE" >
+            <table  >
+                <thead class="First row">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Phone Number</th>
+                        <th>Gender</th>
+                        <th>Marital Status</th>
+                        <th>Vacation days</th>
+                    </tr>
+                    {%if employee==employ.name%}
+                        <tr>    
+                        <td>{{employ.name}}</td>
+                        <td>{{employ.count}}</td>
+                        <td>{{employ.email}}</td>
+                        <td>{{employ.address}}</td>
+                        <td>{{employ.phone}}</td>
+                        <td>{{employ.gender}}</td>
+                        <td>{{employ.status}}</td>
+                        <td>{{employ.vacation}}</td>
+                    </tr>
+                    {% endif %}
+                </thead>
+                <tbody class="Table body">
+
+                </tbody>
+
+            </table>
+        </div>
+
+
+        <button type="button" id="Vacation_request" onclick="to_vacation_form()" ><b>Request Vacation</b></button>
+
+</body>
+
+</html>

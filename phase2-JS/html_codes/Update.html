@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\css\update.css">
+    <title>Update Page</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="p1">Home</li>
+            <li id="p2">Add</li>
+            <li id="p3">Edit</li>
+            <li id="p4">Search</li>
+            <li id="p5">Review</li>
+        </ul>
+    </nav>
+    <h2 class="txt1">Please fill the form below to update/edit/delete employee information</h2>
+    <div class="big">
+        <form id="addForm" style="margin-left:10%;height:60%;margin-top: 50px;padding-top: 6%;">
+            <div>
+                <label>Name:</label>
+                <input maxlength="20" type="text" id="name" style="margin-left: 18%;"><br>
+            </div>
+            <div>
+                <label>ID:</label>
+                <input maxlength="8" type="text" id="id" style="margin-left: 25%;"><br>
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="email" id="email" style="margin-left: 18.5%;"><br>
+            </div>
+            <div>
+                <label>Adress:</label>
+                <input maxlength="30" type="text" id="address" style="margin-left: 16.5%;"><br>
+            </div>
+            <div>
+                <label>Phone Number:</label>
+                <input maxlength="11" type="tel" id="Pnum"><br>
+            </div>
+            <div>
+                <label>Gender:</label>
+                <input type="radio" name="Gender" style="margin-left: 20%;"> Male
+                <input type="radio" name="Gender"> Female<br>
+
+            </div>
+            <div>
+                <label>Martial Status:</label>
+                <input type="radio" name="status" style="margin-left: 6%;"> Single
+                <input type="radio" name="status"> Married<br>
+            </div>
+            <div>
+                <label>Vacation Days:</label>
+                <input type="number" id="num"><br>
+            </div>
+            <div>
+                <label>Salary:</label>
+                <input type="number" id="sal" style="margin-left: 16.5%;"><br>
+            </div>
+            <div>
+                <label>Date of birth:</label>
+                <input type="date" id="date" style="margin-left: 3.5%;width: 53%;" required><br>
+            </div>
+            <button  class="submit" onclick="validation()" type="submit"><B>Submit</B></button>
+            <button class="delete" onclick=" ConfirmDelete()" type="reset" ><B>delete</B></button>  
+   
+    
+        </form>
+    </div> 
+<script src="..\javascript\update.js"> 
+ 
+</script>    
+    
+</body>
+</html>

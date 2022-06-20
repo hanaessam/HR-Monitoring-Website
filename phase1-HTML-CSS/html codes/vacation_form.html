@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vacation Form</title>
+        <meta name="description" content="This is a vacation form"/>
+        <style>
+            * {
+               margin: 0%;
+               padding: 0%;
+               box-sizing: border-box;
+               }
+               nav ul {
+               margin-left: 35%;
+           }
+           nav{
+            background-color: rgb(250, 252, 233);
+           }
+           
+           nav ul li {
+               display: inline-block;
+               margin: 10px;
+               font-size: large;
+               color: black;
+           }
+           A{
+        text-decoration: none;
+        color: rgb(109, 107, 107);
+            }
+        body
+        {
+    background-image: url("unknown.png");
+    background-position: center;
+    background-size: cover;
+        }
+        button
+        {
+            padding: 10px 0;
+            color: black;
+            outline: none;
+            background: transparent;
+            border: 1px solid black;
+            cursor: pointer;
+            width: 255px;
+        }
+        </style>
+    
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a rel="stylesheet" href="home.html"> Home</a></li>
+                <li><a rel="stylesheet" href="Add.html"> Add</a></li>
+                <li><a rel="stylesheet" href="Update.html"> Edit</a></li>
+                <li> <a rel="stylesheet" href="search.html">Search</a> </li>
+                <li><a rel="stylesheet" href="Vacations_review.html"> Review</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h1 style="text-align: center; margin-top: 2%; font-family: Georgia, 'Times New Roman', Times, serif;color: rgb(177, 177, 177);">Vacation Form</h1>
+        </div>
+        <div style="margin-left: 39%; color: rgb(109, 107, 107);background-color: rgb(250, 252, 233);height: 350px;width:350px;border-radius: 15px; margin-top: 30px;">
+            <form style="margin-left:15%;height:60%;padding-top:4% ">
+                <br>
+                    <label>From: </label>
+                    <input type="date" style="margin-left: 5%;">
+                <br>
+                
+                    <label>To: </label>
+                    <input type="date" style="margin-left: 12%;">
+                <br>
+                
+                    <label>Reason: </label>
+                    <br>
+                    <textarea id="res" cols="30" rows="8"></textarea>
+                <br>
+                    
+                    <button type="submit" style="margin-left: 0%;width: 240px;"><b>Submit</b></button>
+                    <br>
+                    <label>Status: </label>
+                <br>
+                    <label>Employee ID: </label>
+                </div>
+            </form>
+        </div>
+    </body>
+
+   
+</html>

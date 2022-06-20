@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Page</title>
+    <link rel="stylesheet" href='{%static 'css/Add.css'%}'>
+
+
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li id="p1">Home</li>
+            <li id="p2">Add</li>
+            <li id="p3">Edit</li>
+            <li id="p4">Search</li>
+            <li id="p5">Review</li>
+        </ul>
+    </nav>
+    <h2 style="margin-left:37%;margin-top: 3%;color: rgb(177, 177, 177);">Please fill the form below..</h2>
+    <div
+        style="margin-left: 37%;color: rgb(109, 107, 107);background-color: rgb(250, 252, 233);height: 350px;width:350px;border-radius: 15px; margin-top: 3%;">
+        <form method="POST" id="addForm" style="margin-left:10%;height:60%;margin-top: 50px;padding-top: 6%;">
+            {% csrf_token %}
+            <div>
+                <label>Name:</label>
+                <input maxlength="20" type="text" id="name" style="margin-left: 18%;" name="name"><br>
+            </div>
+            <div>
+                <label>ID:</label>
+                <input maxlength="8" type="number" id="id" style="margin-left: 25%;" name="count"><br>
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="email" id="email" style="margin-left: 18.5%;" name="email"><br>
+            </div>
+            <div>
+                <label>Adress:</label>
+                <input maxlength="30" type="text" id="address" style="margin-left: 16.5%;" name="address"><br>
+            </div>
+            <div>
+                <label>Phone Number:</label>
+                <input maxlength="11" type="tel" id="Pnum" name="phone"><br>
+            </div>
+            <div>
+                <label>Gender:</label>
+                <select name="gender" placeholder="choose" style="margin-left: 20%;">
+                <option>..</option>
+                <option> Male</option>
+                <option> Female</option>
+                </select><br>
+                
+
+            </div>
+            <div>
+                <label>Martial Status:</label>
+                <select name="status" style="margin-left: 6%;">
+                    <option>..</option>
+                    <option>Single</option>
+                    <option> Married</option>
+                </select><br>
+            </div>
+            <div>
+                <label>Vacation Days:</label>
+                <input type="number" id="num" name="vacation"><br>
+            </div>
+            <div>
+                <label>Salary:</label>
+                <input type="number" id="sal" style="margin-left: 16.5%;" name="salary"><br>
+            </div>
+            <div>
+                <label>Date of birth:</label>
+                <input type="date" id="date" style="margin-left: 3.5%;width: 53%;" required name="date"><br>
+            </div>
+            <button type="submit" onclick="validation()"><b>Submit</b></button>
+            <br>
+        </form>
+        <br>
+        <div id="error" class="error-message" style="color: red; margin-left: 8%; margin-top: 5%;"></div>
+    </div>
+
+
+    <script src='{% static 'js/Add.js' %}'> </script>
+</body>
+
+</html>

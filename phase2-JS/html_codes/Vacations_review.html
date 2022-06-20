@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vacations
+        </title>
+        <link rel="stylesheet" href="..\css\VacationReview.CSS" type="text/css">
+    </head>
+    <script src="..\javascript\VacationReview.js"> </script>
+    <body>
+        <nav>
+            <ul>
+                <li onclick="toHome()" id="p1">Home</li>
+                <li onclick="toAdd()" id="p2">Add</li>
+                <li onclick="toUpdate()" id="p3">Edit</li>
+                <li onclick="toSearch()" id="p4">Search</li>
+                <li onclick="toReview()" id="p5">Review</li> 
+            </ul>
+        </nav>
+        <h1>Employee's Vacations</h4>
+            <center>
+                <table >
+                    <tr class=>
+                        <th>Employee ID</th>
+                        <th>Employee Name</th>
+                        <th>Vacation Due</th>
+                        <th>Vacation Starts</th>
+                        <th>Vacation Ends</th>
+                        <th>Approve Vacation</th>
+                        <th>Reject Vacation</th>
+                    </tr>
+                    <tr>  
+                        <form  name = "myForm" onsubmit = "(Approved_Rejected());">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id ="Approved" name="btn" type="radio"></td>
+                        <td><input id ="Rejected" name="btn" type="radio"></td>
+                    </tr>
+                </table>
+                <button class="submit">submit</button>            </form>      
+            </center>
+           
+       
+    </body>
+</html>

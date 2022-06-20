@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <style>
+        * {
+           margin: 0%;
+           padding: 0%;
+           box-sizing: border-box;
+           }
+           nav ul {
+           margin-left: 35%;
+       }
+       nav{
+        background-color: rgb(250, 252, 233);
+       }
+       
+       nav ul li {
+           display: inline-block;
+           margin: 10px;
+           font-size: large;
+           color: black;
+       }
+       A{
+        text-decoration: none;
+        color: rgb(109, 107, 107);
+       }
+       body
+        {
+    background-image: url("unknown.png");
+    background-position: center;
+    background-size: cover;
+        }
+        button
+        {
+            padding: 10px 0;
+            color: rgb(177, 177, 177);
+            outline: none;
+            background: transparent;
+            border:2px solid rgb(102, 102, 102);
+            cursor: pointer;
+            
+        }
+       </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a rel="stylesheet" href="home.html"> Home</a></li>
+            <li><a rel="stylesheet" href="Add.html"> Add</a></li>
+            <li><a rel="stylesheet" href="Update.html"> Edit</a></li>
+            <li> <a rel="stylesheet" href="search.html">Search</a> </li>
+            <li><a rel="stylesheet" href="Vacations_review.html"> Review</a></li>
+            
+        </ul>
+    </nav>
+    <div>
+        <form style="text-align: center;margin-top: 10%;">
+            <input type="search"  placeholder="   Enter the employee's name" style="width: 30%;font-size: large; border: transparent;border-radius: 8px;">
+            <button type="submit" style="width: 5%;"><b>Search</b></button>
+        </form>
+    </div>
+    <center>
+<br>
+
+    <div>
+        <table  border="1" style="text-align: center;width: 70%;font-size: large;">
+
+        <thead class="First row">
+            <tr style="color: rgb(250, 252, 233)">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Phone Number</th>
+                <th>Gender</th>
+                <th>Marital Status</th>
+                <th>Vacation days</th>
+            </tr>
+        </thead>
+        <tbody class="Table body"> 
+
+        </tbody>
+
+        </table>
+    </div>
+    </center>
+    <button type="button" style="margin-top: 4%;margin-left: 40%;border-width: 3px;width:200px;"><a href="vacation_form.html" style="color:rgb(250, 252, 233) ;"><b>Request Vacation</b></a></button>
+    
+</body>
+
+</html>

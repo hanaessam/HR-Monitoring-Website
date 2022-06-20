@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\css\home.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="p1">Home</li>
+            <li id="p2">Add</li>
+            <li id="p3">Edit</li>
+            <li id="p4">Search</li>
+            <li id="p5">Review</li>
+        </ul>
+    </nav>
+    <p>What’s up!<br>
+        We know that keeping and managing all staff information isn’t an easy task, so we’ve decided to come up with our own solution for the HR department.<br> We’ve collected all the necessary features in one service, such as the employee info, salary, vacations and various onboarding tasks.<br> HR manager can easily find all the information about their colleague and employees right away in one place.</p>
+        <h1>Sign in to use our features of the website</h1>
+        <div>
+        <form>
+        <label class="lab1">E-mail:</label>
+        <input  id="txtEmail" type="email" placeholder="    please insert email" style="margin-left:7px"><br><br>
+        <label>Password:</label>
+        <input maxlength="20" id="pass" type="password" placeholder="   please insert passsword" style="margin-left:6px">
+        <br><br>
+        <button onclick="checkEmail(),checkPassword()" type="submit"><a href="Home.html" style="color: black;"> Sign in</a></button>
+    </form>   
+</div>
+<script src="..\javascript\home.js">
+    
+</script>
+</body>

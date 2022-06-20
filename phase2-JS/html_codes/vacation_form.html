@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Form</title>
+    <meta name="description" content="This is a vacation form" />
+    <link rel="stylesheet" href="..\css\vacation_form.css">
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li id="p1">Home</li>
+            <li id="p2">Add</li>
+            <li id="p3">Edit</li>
+            <li id="p4">Search</li>
+            <li id="p5">Review</li>
+        </ul>
+    </nav>
+    <div>
+        <h1 class="vacation-header1">Vacation Form</h1>
+    </div>
+    <div class="form-div">
+        <form id="vacationForm" class="form-style" method="GET">
+            <br>
+            <label style="margin-right: 10px;">From: </label>
+            <input id="fromDate" type="date" required>
+            <br>
+
+            <label style="margin-right: 28px;">To: </label>
+            <input id="toDate" type="date" required>
+            <br>
+
+            <label>Reason: </label>
+            <br>
+            <textarea id="res" cols="30" rows="8" placeholder="Enter the reason for your vacation here"></textarea>
+            <br>
+
+            <button class="submit-button" type="submit" onclick="checkValid()"><b>Submit</b></button>
+            <br>
+            <label>Status: </label>
+            <label style="color: red;" id="submitted"></label>
+            <br>
+            <label>Employee ID: </label>
+
+            <div  id="error" class="error-message"></div>
+    </div>
+    </form>
+    </div>
+    <script src="..\javascript\vacation_form.js"></script>
+</body>
+
+
+</html>

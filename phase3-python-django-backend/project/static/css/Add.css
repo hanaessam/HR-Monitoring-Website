@@ -1,0 +1,40 @@
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    }
+nav ul {
+    margin-left: 30%;
+}
+nav{
+    background-color: rgb(250, 252, 233);
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+    margin-left: 5%;
+    font-size: large;
+    color: rgb(109, 107, 107);}
+
+body
+    {
+background-image: url("unknown.png");
+background-position: center;
+background-size: cover;
+font-family: sans-serif;
+}
+
+button
+{
+    padding: 10px 0;
+    margin-top:10% ;
+    margin-left: 20%;
+    color: black;
+    outline: none;
+    background: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 150px;
+}

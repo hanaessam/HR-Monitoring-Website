@@ -1,0 +1,69 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  }
+nav ul {
+  margin-left: 30%;
+}
+nav{
+  background-color: rgb(250, 252, 233);
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px;
+  margin-left: 5%;
+  font-size: large;
+  color: rgb(109, 107, 107);}
+
+body
+  {
+background-image: url("unknown.png");
+background-position: center;
+background-size: cover;
+font-family: sans-serif;
+  }
+
+button {
+  padding: 10px 0;
+  color: black;
+  outline: none;
+  background: transparent;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 255px;
+}
+
+.vacation-header1 {
+  text-align: center;
+  margin-top: 2%;
+  color: rgb(177, 177, 177);
+}
+
+.form-div {
+  margin-left: 39%;
+  color: rgb(109, 107, 107);
+  background-color: rgb(250, 252, 233);
+  height: 370px;
+  width: 350px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+.form-style {
+  margin-left: 15%;
+  height: 60%;
+  padding-top: 4%;
+}
+
+.submit-button {
+  margin-left: 0%;
+  width: 240px;
+}
+
+.error-message{
+  color: red; 
+  margin-right: 10%;
+  margin-bottom: 10%;
+}

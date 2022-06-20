@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Page</title>
+    <style>
+        * {
+           margin: 0%;
+           padding: 0%;
+           box-sizing: border-box;
+        }
+        nav ul {
+           margin-left: 35%;
+       }
+       nav{
+        background-color: rgb(250, 252, 233);
+       }
+       
+       nav ul li {
+           display: inline-block;
+           margin: 10px;
+           font-size: large;
+           color: black;
+       }
+       A{
+           text-decoration: none;
+           color: rgb(109, 107, 107);
+        }
+        form{
+            width: 90%;
+            max-width: 600px;
+            
+
+        }
+        .submit
+        {
+            padding: 10px 0;
+            margin-top:7% ;
+            margin-left: 20%;
+            color: black;
+            outline: none;
+            background: transparent;
+            border: 1px solid black;
+            cursor: pointer;
+            width: 150px;
+        }
+        .delete{
+            padding: 10px 0;
+            margin-top:5% ;
+            margin-left: 20%;
+            color: black;
+            outline: none;
+            background: transparent;
+            border: 1px solid black;
+            cursor: pointer;
+            width: 150px;
+        }
+        body
+{
+    background-image: url("unknown.png");
+    background-position: center;
+    background-size: cover;
+
+}
+       </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a rel="stylesheet" href="home.html"> Home</a></li>
+            <li><a rel="stylesheet" href="Add.html"> Add</a></li>
+            <li><a rel="stylesheet" href="Update.html"> Edit</a></li>
+            <li> <a rel="stylesheet" href="search.html">Search</a> </li>
+            <li><a rel="stylesheet" href="Vacations_review.html"> Review</a></li>
+        </ul>
+    </nav>
+    <h2 style="margin-left:25%;margin-top: 3%;color: rgb(177, 177, 177);">Please fill the form below to update/edit/delete employee information</h2>
+    <div style="margin-left: 37%;color: rgb(109, 107, 107);background-color: rgb(250, 252, 233);height: 350px;width:350px;border-radius: 15px; margin-top: 4%;">
+        <form style="margin-left:10%;height:60%;margin-top: 50px;padding-top: 5%; ">
+            <div >
+                <label for="name">Name:</label>
+                <input type="text" name="name" style="margin-left: 18%;"><br>
+            </div>
+            <div>
+                <label for="id">ID:</label>
+                <input type="text" name="id" style="margin-left: 25%;"><br>
+            </div>
+            <div>
+                <label for="Email">Email:</label>
+                <input type="email" name="email"  style="margin-left: 18.5%;"><br>
+            </div>
+            <div>
+                <label for="adress">Adress:</label>
+                <input type="text" name="adress" style="margin-left: 16.5%;"><br>
+            </div>
+            <div>
+                <label for="Pnum">Phone Number:</label>
+               
+                <input type="tel" name="Pnum"><br>
+            </div>
+            <div>
+                <label for="Gender">Gender:</label>
+                <input type="radio" name="Gender"  style="margin-left: 20%;"> Male
+                <input type="radio" name="Gender"> Female<br>
+    
+            </div>
+            <div>
+                <label for="">Martial Status:</label>
+                <input type="radio" name="status"  style="margin-left: 6%;"> Single
+                <input type="radio" name="status"> Married<br>
+            </div>
+            <div>
+                <label for="num">Vacation Days:</label>
+                <input type="number" name="num"><br>       
+            </div>
+            <div>
+                <label for="sal">Salary:</label>
+                <input type="number" name="sal"  style="margin-left: 16.5%;"><br>  
+            </div>
+            <div>
+                <label for="date">Date of birth:</label>
+                <input type="date" name="date"  style="margin-left: 3.5%;width: 53%;"><br>
+            </div>
+            <button class="submit" type="submit"><B>Submit</B></button>
+            <button class="delete" type="reset" ><B>delete</B></button>     
+    
+        </form>
+    </div> 
+</body>
+</html>
